@@ -9,13 +9,13 @@ import ReservasiKehadiran from "./ReservasiKehadiran";
 import UcapkanSesuatu from "./UcapkanSesuatu";
 import WeddingEvent from "./WeddingEvent";
 import WeddingGift from "./WeddingGift";
-import Cover from "./Cover";
+// import Cover from "./Cover";
 import PlayMusic from "./PlayMusic";
 
 const Main = () => {
   return (
     <>
-      <Cover />
+      {/* <Cover /> */}
       <Header />
       <PasanganMempelai />
       <KisahCinta />

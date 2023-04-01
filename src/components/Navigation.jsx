@@ -12,7 +12,7 @@ const Navigation = () => {
       <div className="flex justify-center items-center">
         <div className="bg-white shadow-lg shadow-black grid grid-cols-5 gap-8 px-8 rounded-lg border-solid border-gray-500 fixed bottom-4 z-40 mx-4">
           <div className="text-center lg:-mt-1 text-primary font-secondary text-[18px]">
-            <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
+            <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
               <img
                 src={home}
                 alt=""
@@ -26,7 +26,7 @@ const Navigation = () => {
               to="couple"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={0}
               duration={500}
             >
               <img

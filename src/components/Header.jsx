@@ -9,7 +9,7 @@ const Header = () => {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("March 20, 2023").getTime();
+    const countDownDate = new Date("April 20, 2023").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -49,7 +49,7 @@ const Header = () => {
           Me & Mine
         </p>
         <p className="font-secondary text-center text-2xl mt-4 lg:mt-5">
-          Senin, 20 Maret 2023
+          20, April 2023
         </p>
         <div className="grid grid-cols-4 gap-4 px-4 lg:px-32 mt-4 lg:mt-[35px]">
           <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg">
