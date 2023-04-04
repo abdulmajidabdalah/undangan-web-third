@@ -33,7 +33,7 @@ const WeddingGift = () => {
             </p>
           </div>
         </div>
-        <div className="bg-bg-mempelai mx-16 lg:h-[490px] rounded-lg shadow-lg shadow-black lg:mt-20">
+        <div className="bg-bg-mempelai mx-16 lg:h-[490px] rounded-lg shadow-lg shadow-black lg:mt-20 mt-5">
           <div className="flex justify-center items-center">
             <img
               src={bni}
@@ -113,16 +113,15 @@ const WeddingGift = () => {
               className="lg:w-[250px] lg:h-[180px] w-[100px] mt-5"
             />
           </div>
-          <div className="bg-[#426a69] h-[2px] mx-16 my-6"></div>
+          <div className="bg-[#426a69] h-[2px] mx-16 mb-6 mt-3"></div>
           <div className="font-secondary text-center text-[20px] lg:text-[25px] text-[#696969] leading-relaxed pb-8">
             <p className="lg:my-4 font-semibold lg:text-current text-2xl">
               Kirim Kado
             </p>
-            <p>Kp. Houston</p>
-            <p>RT/RW 03/01</p>
-            <p>Desa. Washington</p>
-            <p>Kec. Las Pegas</p>
-            <p>Kab. New York</p>
+            <p className="px-2">
+              Kp. Houston RT/RW 03/01 Desa. Washington Kec. Las Pegas Kab. New
+              York
+            </p>
             <p>Penerima : Mine</p>
           </div>
         </div>

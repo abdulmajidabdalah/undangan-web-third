@@ -1,9 +1,12 @@
 import React from "react";
 
+export const headingStyleNone =
+  "bg-primary h-3 pt-3 border-b-4 border-t-4 border-dotted border-white";
+
 const ReservasiKehadiran = () => {
   return (
     <>
-      <div className="bg-primary h-8 border-4 border-double border-white"></div>
+      <div className={headingStyleNone}></div>
       <div className="lg:mx-[174px] bg-primary pb-28">
         <h1 className="text-center font-mempelai text-white pt-8">
           Reservasi Kehadiran

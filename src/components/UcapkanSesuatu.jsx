@@ -10,6 +10,7 @@ import React, { useState, useEffect } from "react";
 import { GoVerified } from "react-icons/go";
 import { FaWindowClose } from "react-icons/fa";
 import { db } from "../config/configFirebase";
+import { headingStyleNone } from "./ReservasiKehadiran";
 
 const UcapkanSesuatu = () => {
   const [comments, setComments] = useState([]);
@@ -63,12 +64,17 @@ const UcapkanSesuatu = () => {
       setComments(listComments);
     });
   }, []);
+
+  const styles = {
+    btnTop:
+      "w-[120px] text-center font-secondary text-white text-sm rounded-md",
+    btnTopIcon: "font-semibold flex justify-center items-center py-1",
+    input:
+      "bg-white w-full text-[16px] rounded-sm ring-1 ring-primary focus:outline-none focus:ring-1 px-2 focus:ring-sky-300 mb-2",
+  };
   return (
     <>
-      <div
-        className="bg-primary h-8 border-4 border-double border-white"
-        id="whises"
-      ></div>
+      <div className={headingStyleNone} id="whises"></div>
       <div className="lg:mx-[174px] bg-bg-main bg-center bg-no-repeat bg-cover pb-4">
         <div className="text-center pt-5 lg:pt-10">
           <h1 className="font-mempelai text-[55px] lg:text-[80px]">
@@ -83,12 +89,17 @@ const UcapkanSesuatu = () => {
             {comments.length} Comments
           </p>
           <div className="flex justify-center items-center gap-3 mt-4">
-            <div className="bg-green-700 w-[120px] text-center font-secondary text-white text-sm py-1 rounded-md">
-              <p className="font-semibold">{comments.length}</p>
+            <div className={`bg-green-700 ${styles.btnTop}`}>
+              <p className={styles.btnTopIcon}>
+                {" "}
+                <GoVerified />
+              </p>
               <p>Hadir</p>
             </div>
-            <div className="bg-red-600 w-[120px] text-center font-secondary text-white text-sm py-1 rounded-md">
-              <p className="font-semibold">2</p>
+            <div className={`bg-red-600 ${styles.btnTop}`}>
+              <p className={styles.btnTopIcon}>
+                <FaWindowClose />
+              </p>
               <p>Tidak Hadir</p>
             </div>
           </div>
@@ -96,16 +107,16 @@ const UcapkanSesuatu = () => {
           <form className="px-4 font-secondary" onSubmit={handleSubmit}>
             <input
               type="text"
-              className="bg-white w-full text-[16px] rounded-sm ring-1 ring-primary focus:outline-none focus:ring-1 px-2 focus:ring-sky-300 mb-2"
+              className={`py-2 ${styles.input}`}
               placeholder="Nama"
               name="nama"
               value={formData.nama}
               onChange={(e) => handleChange(e)}
             />
             <textarea
-              rows={2}
+              rows={4}
               type="text"
-              className="bg-white w-full py-1 text-[16px] rounded-sm ring-1 ring-primary focus:outline-none focus:ring-1 px-2 focus:ring-sky-300 mb-2"
+              className={styles.input}
               placeholder="Ucapan"
               value={formData.ucapan}
               name="ucapan"
@@ -154,7 +165,6 @@ const UcapkanSesuatu = () => {
                   <div className="flex justify-start items-center gap-1 text-[10px] pl-9 mt-1 text-primary">
                     <i className="icofont-clock-time icofont-md"></i>
                     <p>{comment.createdAt.toDate().toDateString()}</p>
-                    <button className="font-semibold">Reply</button>
                   </div>
                 </li>
               ))}

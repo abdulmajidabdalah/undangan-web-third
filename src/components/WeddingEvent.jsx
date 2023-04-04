@@ -1,12 +1,11 @@
 import React from "react";
+import { styleHeading } from "./KisahCinta";
+import { headingStyleNone } from "./ReservasiKehadiran";
 
 const WeddingEvent = () => {
   return (
     <>
-      <div
-        className="bg-primary h-[120px] flex justify-center items-center font-pasangan lg:text-[80px] text-5xl leading-relaxed text-white"
-        id="event"
-      >
+      <div className={styleHeading} id="event">
         <p>Our Wedding Event</p>
       </div>
       <div className="bg-bg-main lg:mx-[174px] bg-center bg-cover bg-no-repeat py-[30px]">
@@ -14,20 +13,20 @@ const WeddingEvent = () => {
           <div className="font-secondary text-center py-10">
             <h1 className="font-mempelai">Akad Nikah</h1>
             <div className="lg:text-[26px] text-[18px] py-1">
-              <p>Minggu, 29 Januari 2023</p>
+              <p>Minggu, 20 April 2023</p>
               <p>Pukul 09.00 WIB</p>
-              <p>Kp. Cimanggu Hilir RT/RW 03/01</p>
-              <p>Desa Curugkembar</p>
-              <p>Kec. Curugkembar Kab. Sukabumi</p>
+              <p>Kp. Los Angeles RT/RW 03/01</p>
+              <p>Desa NewYork</p>
+              <p>Kec. Washington Kab. Sukabumi</p>
             </div>
             <div className="font-secondary text-center pb-10 lg:py-10">
               <h1 className="font-mempelai">Resepsi</h1>
               <div className="lg:text-[26px] text-[18px] py-1">
-                <p>Minggu, 29 Januari 2023</p>
+                <p>Minggu, 29 April 2023</p>
                 <p>Pukul 11.00 WIB s/d Selesai</p>
-                <p>Kp. Cimanggu Hilir RT/RW 03/01</p>
-                <p>Desa Curugkembar</p>
-                <p>Kec. Curugkembar Kab. Sukabumi</p>
+                <p>Kp. Los Angeles RT/RW 03/01</p>
+                <p>Desa NewYork</p>
+                <p>Kec. Washington Kab. Sukabumi</p>
               </div>
             </div>
             <button className="bg-primary px-6 py-2 rounded-md font-secondary text-white">
@@ -49,7 +48,7 @@ const WeddingEvent = () => {
           </button>
         </div>
       </div>
-      <div className="bg-primary h-[30px] border-double border-4 border-white"></div>
+      <div className={headingStyleNone}></div>
     </>
   );
 };
