@@ -60,11 +60,16 @@ const Footer = () => {
       <div className="bg-[#2E2F3A] h-[40vh] font-footer text-center pt-8">
         <p>Copyright Abdul-Majid-Abdalah © 2023</p>
         <p>Abadikan Moment Spesial</p>
-        <p>- All Rights Reserved -</p>
-        <button className="bg-slate-200 text-primary hover:bg-primary hover:text-white px-4 py-2 rounded-lg mt-8 duration-200">
+        <p className="mb-8">- All Rights Reserved -</p>
+        <a
+          href="https://www.instagram.com/abdulmajidabdalah_/"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-slate-200 text-primary hover:bg-primary hover:text-white px-4 py-2 rounded-lg duration-200"
+        >
           <i className="icofont-instagram mr-2"></i>
           @abdulmajidabdalah_
-        </button>
+        </a>
       </div>
     </>
   );

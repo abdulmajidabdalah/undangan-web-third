@@ -1,7 +1,7 @@
 import React from "react";
 
 export const headingStyleNone =
-  "bg-primary h-3 pt-3 border-b-4 border-t-4 border-dotted border-white";
+  "bg-primary h-3 border-t-4 border-dotted border-white";
 
 const ReservasiKehadiran = () => {
   return (
