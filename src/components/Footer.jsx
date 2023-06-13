@@ -1,5 +1,5 @@
 import React from "react";
-import IMG from "../assets/jumbotron.jpeg";
+import IMG from "../assets/img-cover.jpg";
 import cuci from "../assets/cuci.png";
 import masker from "../assets/masker.png";
 import jarak from "../assets/jarak.png";
@@ -15,7 +15,7 @@ const Footer = () => {
             className="lg:h-[300px] lg:w-[300px] h-[250px] w-[250px] rounded-[50%] object-cover m-auto"
           />
           <div className="text-center">
-            <p className="font-mempelai">Me & Mine</p>
+            <p className="font-mempelai text-3xl py-3">Yosep Ramdani & Sri Kartini</p>
             <p className="font-secondary text-[25px] text-[#696969] my-4 lg:my-8">
               Atas kehadiran dan doa restunya, kami ucapkan terimakasih.
             </p>

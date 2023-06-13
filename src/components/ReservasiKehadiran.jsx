@@ -7,27 +7,29 @@ const ReservasiKehadiran = () => {
   return (
     <>
       <div className={headingStyleNone}></div>
-      <div className="lg:mx-[174px] bg-primary pb-28">
-        <h1 className="text-center font-mempelai text-white pt-8">
+      <div className="lg:mx-[174px] bg-bg-main bg-center bg-no-repeat bg-cover pb-28 pt-3">
+        <div className="bg-white h-[100px] rounded-t-[50%] mb-3">
+        <h1 className="text-center font-mempelai text-primary pt-5">
           Reservasi Kehadiran
         </h1>
-        <div className="grid grid-cols-1 bg-white px-4 py-10 font-secondary mx-4 lg:mx-20 rounded-lg shadow-lg">
+        </div>
+        <div className="grid grid-cols-1 bg-white/30 backdrop-brightness-50 px-4 py-10 font-secondary mx-4 lg:mx-20 rounded-lg shadow-lg">
           <form action="">
             <input
               type="text"
               placeholder="Isikan Nama Anda"
-              className="w-full py-2 text-[16px] bg-slate-100 rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
+              className="w-full py-2 text-[16px] bg-white rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
             />
             <input
               type="text"
               placeholder="Jumlah Yang Akan Hadir"
-              className="w-full py-2 text-[16px] bg-slate-100 rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
+              className="w-full py-2 text-[16px] bg-white rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
             />
             <textarea
               rows={3}
               type="text"
               placeholder="Berikan Pesan Dan Doa Restu"
-              className="w-full py-2 text-[16px] bg-slate-100 rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
+              className="w-full py-2 text-[16px] bg-white rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
             />
             <label>Konfirmasi</label>
             <div className="mb-3 xl:w-96">

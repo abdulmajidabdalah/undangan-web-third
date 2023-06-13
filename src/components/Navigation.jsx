@@ -16,49 +16,31 @@ const Navigation = () => {
       <div className="flex justify-center items-center">
         <div className="bg-white shadow-lg shadow-black grid grid-cols-5 rounded-lg border-solid border-gray-500 fixed bottom-4 z-40 mx-1 lg:px-5">
           <div className="text-center lg:-mt-1 text-primary font-secondary text-[18px]">
-            <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
+            <Link to="home" offset={0} duration={500}>
               <img src={home} alt="" className={style.img} />
             </Link>
             <p className="-mt-3 ml-1">Home</p>
           </div>
           <div className="text-center lg:-mt-1 text-primary font-secondary text-[18px]">
-            <Link
-              to="couple"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
+            <Link to="couple" offset={0} duration={500}>
               <img src={couple} alt="" className={style.img} />
             </Link>
             <p className="-mt-3 ml-1">Couple</p>
           </div>
           <div className="text-center lg:-mt-1 text-primary font-secondary text-[18px]">
-            <Link to="event" spy={true} smooth={true} offset={0} duration={500}>
+            <Link to="event" offset={0} duration={500}>
               <img src={event} alt="" className={style.img} />
             </Link>
             <p className="-mt-3 ml-1">Event</p>
           </div>
           <div className="text-center lg:-mt-1 text-primary font-secondary text-[18px]">
-            <Link
-              to="gallery"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
+            <Link to="gallery" offset={0} duration={500}>
               <img src={gallery} alt="" className={style.img} />
             </Link>
             <p className="-mt-3 ml-1">Gallery</p>
           </div>
           <div className="text-center lg:-mt-1 text-primary font-secondary text-[18px]">
-            <Link
-              to="whises"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
+            <Link to="whises" offset={50} duration={500}>
               <img src={whises} alt="" className={style.img} />
             </Link>
             <p className="-mt-3 ml-1">Whises</p>

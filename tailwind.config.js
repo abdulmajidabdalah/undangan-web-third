@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern":
-          "linear-gradient(to right, rgba(6,5,6,0), rgba(6,5,6,0)),url('https://digimo.id/wp-content/uploads/2022/05/pexels-photo-372225.jpeg')",
-        "bg-main": "url('/src/assets/bg-main.jpeg')",
+          "linear-gradient(to right, rgba(6,5,6,0), rgba(0,0,0,0)),url('/src/assets/bg-cover2.jpg')",
+        "bg-main": "url('/src/assets/bg-header.jpg')",
         "bg-mempelai": "url('/src/assets/bg-mempelai.jpeg')",
       },
       backgroundColor: {

@@ -9,7 +9,7 @@ const Header = () => {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("April 20, 2023").getTime();
+    const countDownDate = new Date("July 09, 2023").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -39,20 +39,22 @@ const Header = () => {
   return (
     <>
       <div
-        className="lg:mx-[174px] bg-center bg-no-repeat bg-bg-main bg-cover"
+        className="lg:mx-[174px] bg-center bg-no-repeat bg-bg-main bg-cover bg-fixed py-2"
         id="home"
       >
+        <div className="bg-white/30 backdrop-blur-xl mx-2 rounded-lg pb-4">
         <p className="font-secondary text-center text-2xl pt-4 lg:pt-[70px]">
           The Wedding Of
         </p>
-        <p className="font-mempelai text-center text-6xl lg:text-8xl mt-4 lg:mt-10">
-          Me & Mine
+        <p className="font-mempelai text-center text-3xl lg:text-6xl mt-4 lg:mt-10" data-aos="zoom-in">
+          Yosep Ramdani & Sri Kartini
         </p>
         <p className="font-secondary text-center text-2xl mt-4 lg:mt-5">
-          20, April 2023
+          09 July 2023
         </p>
+        </div>
         <div className="grid grid-cols-4 gap-4 px-4 lg:px-32 mt-4 lg:mt-[35px]">
-          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg">
+          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg" data-aos="flip-down">
             <div className="text-center font-button-cover text-white">
               <p className="lg:text-[50px] text-[35px] leading-[40px] lg:leading-[65px]">
                 {timerDays}
@@ -60,7 +62,7 @@ const Header = () => {
               <p className="text-[18px] leading-[18px]">Hari</p>
             </div>
           </div>
-          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg">
+          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg" data-aos="flip-up">
             <div className="text-center font-button-cover text-white">
               <p className="lg:text-[50px] text-[35px] leading-[40px] lg:leading-[65px]">
                 {timerHours}
@@ -68,7 +70,7 @@ const Header = () => {
               <p className="text-[18px] leading-[18px]">Jam</p>
             </div>
           </div>
-          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg">
+          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg" data-aos="flip-down">
             <div className="text-center font-button-cover text-white">
               <p className="lg:text-[50px] text-[35px] leading-[40px] lg:leading-[65px]">
                 {timerMinutes}
@@ -76,7 +78,7 @@ const Header = () => {
               <p className="text-[18px] leading-[18px]">Menit</p>
             </div>
           </div>
-          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg">
+          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg" data-aos="flip-up">
             <div className="text-center font-button-cover text-white">
               <p className="lg:text-[50px] text-[35px] leading-[40px] lg:leading-[65px]">
                 {timerSeconds}
@@ -85,10 +87,12 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <article className="lg:px-[5rem] px-4 font-normal font-secondary text-[#54595f] text-[26px] leading-[30px] mt-4 lg:mt-[58px]">
+        <article className="lg:px-[5rem] px-4 font-normal font-secondary text-white text-[26px] leading-[30px] mt-4 lg:mt-[58px] mx-2 rounded-lg py-2 backdrop-brightness-50 bg-white/30">
           <p
             align="justify"
             className="text-center lg:text-current text-[22px]"
+            data-aos="zoom-in"
+            data-aos-delay="700"
           >
             " Dan di antara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu
             pasangan hidup dari jenismu sendiri supaya kamu dapat ketenangan

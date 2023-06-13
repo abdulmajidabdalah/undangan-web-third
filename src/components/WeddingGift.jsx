@@ -4,6 +4,10 @@ import bjb from "../assets/bjb.png";
 import gift from "../assets/gift.png";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
+const styles = {
+  card : "bg-white/30 backdrop-blur-2xl mx-16 lg:h-[490px] rounded-lg shadow-lg shadow-black lg:mt-20 mt-5"
+}
+
 const WeddingGift = () => {
   const [copySatu, setCopySatu] = useState(false);
   const onCopySatu = () => {
@@ -17,12 +21,12 @@ const WeddingGift = () => {
   };
   return (
     <>
-      <div className="lg:mx-[174px] bg-bg-main bg-center bg-cover bg-no-repeat pb-8">
-        <div className="bg-bg-main bg-center bg-cover bg-no-repeat px-4 pb-4">
-          <h1 className="font-mempelai text-[#426a69] text-center pt-8 lg:pt-24 lg:text-8xl text-5xl">
+      <div className="lg:mx-[174px] bg-bg-main bg-center bg-cover bg-no-repeat pb-8 pt-3">
+        <div className="bg-white rounded-t-[50%] px-4 pb-4">
+          <h1 className="font-mempelai text-[#426a69] text-center pt-8 lg:pt-24 lg:text-8xl text-5xl" data-aos="zoom-in">
             Wedding Gift
           </h1>
-          <div className="font-secondary text-center text-[#696969] text-[22px] lg:text-[26px] lg:pt-10 pt-4">
+          <div className="font-secondary text-center text-[#696969] text-[22px] lg:text-[26px] lg:pt-10 pt-4" data-aos="zoom-out" data-aos-delay="500">
             <p>
               Doa restu anda merupakan karunia yang sangat berarti bagi kami.
               Dan jika memberi
@@ -33,7 +37,7 @@ const WeddingGift = () => {
             </p>
           </div>
         </div>
-        <div className="bg-bg-mempelai mx-16 lg:h-[490px] rounded-lg shadow-lg shadow-black lg:mt-20 mt-5">
+        <div className={styles.card} data-aos="fade-left">
           <div className="flex justify-center items-center">
             <img
               src={bni}
@@ -42,7 +46,7 @@ const WeddingGift = () => {
             />
           </div>
           <div className="bg-[#426a69] h-[2px] mx-16 my-2 lg:my-6"></div>
-          <div className="font-secondary text-center text-[20px] lg:text-[25px] text-[#696969]">
+          <div className="font-secondary text-center text-[20px] lg:text-[25px] text-white">
             <p>No. Rekening</p>
             <p className="lg:my-5 my-2">1234567890</p>
           </div>
@@ -65,11 +69,11 @@ const WeddingGift = () => {
               </button>
             </CopyToClipboard>
           </div>
-          <p className="font-secondary text-center text-[25px] text-[#696969] lg:mt-5 mt-3 pb-4">
-            an Me
+          <p className="font-secondary text-center text-[25px] text-white lg:mt-5 mt-3 pb-4">
+            AN : Sri Kartini
           </p>
         </div>
-        <div className="bg-bg-mempelai mx-16 lg:h-[490px] rounded-lg shadow-lg shadow-black mt-10">
+        <div className={styles.card} data-aos="fade-right" data-aos-delay="500">
           <div className="flex justify-center items-center">
             <img
               src={bjb}
@@ -78,7 +82,7 @@ const WeddingGift = () => {
             />
           </div>
           <div className="bg-[#426a69] h-[2px] mx-16 my-2 lg:my-6"></div>
-          <div className="font-secondary text-center text-[20px] lg:text-[25px] text-[#696969]">
+          <div className="font-secondary text-center text-[20px] lg:text-[25px] text-white">
             <p>No. Rekening</p>
             <p className="lg:my-5 my-2">1234567890</p>
           </div>
@@ -101,11 +105,11 @@ const WeddingGift = () => {
               </button>
             </CopyToClipboard>
           </div>
-          <p className="font-secondary text-center text-[25px] text-[#696969] lg:mt-5 mt-3 pb-4">
-            an Me
+          <p className="font-secondary text-center text-[25px] text-white lg:mt-5 mt-3 pb-4">
+            an Yosep Ramdani
           </p>
         </div>
-        <div className="bg-bg-mempelai mx-16 rounded-lg shadow-lg shadow-black mt-10">
+        <div className={styles.card} data-aos="fade-id">
           <div className="flex justify-center items-center">
             <img
               src={gift}
@@ -114,7 +118,7 @@ const WeddingGift = () => {
             />
           </div>
           <div className="bg-[#426a69] h-[2px] mx-16 mb-6 mt-3"></div>
-          <div className="font-secondary text-center text-[20px] lg:text-[25px] text-[#696969] leading-relaxed pb-8">
+          <div className="font-secondary text-center text-[20px] lg:text-[25px] text-white leading-relaxed pb-8">
             <p className="lg:my-4 font-semibold lg:text-current text-2xl">
               Kirim Kado
             </p>
@@ -122,10 +126,10 @@ const WeddingGift = () => {
               Kp. Houston RT/RW 03/01 Desa. Washington Kec. Las Pegas Kab. New
               York
             </p>
-            <p>Penerima : Mine</p>
+            <p>Penerima : Sri Kartini</p>
           </div>
         </div>
-        <div className="bg-white mx-16 shadow-md shadow-black mt-8">
+        <div className="bg-white mx-16 shadow-md shadow-black mt-8" data-aos="fade-out" data-aos-delay="500">
           <form
             action=""
             className="grid grid-cols-1 p-2 font-secondary text-[16px]"

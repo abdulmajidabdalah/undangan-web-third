@@ -9,10 +9,10 @@ const WeddingEvent = () => {
         <p>Our Wedding Event</p>
       </div>
       <div className="bg-bg-main lg:mx-[174px] bg-center bg-cover bg-no-repeat py-[30px]">
-        <div className="bg-bg-mempelai lg:mx-[80px] mx-6 px-2 flex justify-center rounded-lg shadow-lg shadow-primary">
+        <div className="bg-white/30 backdrop-brightness-50 lg:mx-[80px] mx-6 px-2 flex justify-center rounded-lg">
           <div className="font-secondary text-center py-10">
             <h1 className="font-mempelai">Akad Nikah</h1>
-            <div className="lg:text-[26px] text-[18px] py-1">
+            <div className="lg:text-[26px] text-[18px] py-1 text-white" data-aos="zoom-in">
               <p>Minggu, 20 April 2023</p>
               <p>Pukul 09.00 WIB</p>
               <p>Kp. Los Angeles RT/RW 03/01</p>
@@ -21,7 +21,7 @@ const WeddingEvent = () => {
             </div>
             <div className="font-secondary text-center pb-10 lg:py-10">
               <h1 className="font-mempelai">Resepsi</h1>
-              <div className="lg:text-[26px] text-[18px] py-1">
+              <div className="lg:text-[26px] text-[18px] py-1 text-white" data-aos="zoom-in" data-aos-delay="500">
                 <p>Minggu, 29 April 2023</p>
                 <p>Pukul 11.00 WIB s/d Selesai</p>
                 <p>Kp. Los Angeles RT/RW 03/01</p>

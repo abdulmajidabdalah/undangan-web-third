@@ -7,7 +7,7 @@ export const styleHeading =
 const styles = {
   border:
     "-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700",
-  card: "ml-6 mb-10 block max-w-md rounded-lg bg-mempelai text-primary p-6 shadow-lg shadow-black border-2 border-primary",
+  card: "ml-6 mb-10 block max-w-md rounded-lg bg-white/30 backdrop-brightness-50 text-white p-6 shadow-lg shadow-black border-2 border-primary",
   textHeading: "mb-4 flex justify-between font-bold",
   icon: "text-[#FF597B]",
   bodyText: "mb-6 text-primary",
@@ -19,7 +19,7 @@ const KisahCinta = () => {
       <div className={styleHeading}>
         <p>Kisah Perjalanan Cinta</p>
       </div>
-      <div className="lg:mx-[174px] px-4 bg-bg-mempelai py-8 flex justify-center items-center mx-4">
+      <div className="lg:mx-[174px] px-4 bg-bg-main bg-center bg-no-repeat bg-cover bg-fixed py-8 flex justify-center items-center">
         <ol className="border-l-2 border-info-100">
           <li>
             <div className="flex-start md:flex">

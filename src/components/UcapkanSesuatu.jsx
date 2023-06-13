@@ -75,8 +75,8 @@ const UcapkanSesuatu = () => {
   return (
     <>
       <div className={headingStyleNone} id="whises"></div>
-      <div className="lg:mx-[174px] bg-bg-main bg-center bg-no-repeat bg-cover pb-4">
-        <div className="text-center pt-5 lg:pt-10">
+      <div className="lg:mx-[174px] bg-bg-main bg-center bg-no-repeat bg-cover pb-4 pt-5">
+        <div className="text-center pb-5 pt-7 lg:pt-10 bg-white rounded-t-[50%] px-2">
           <h1 className="font-mempelai text-[55px] lg:text-[80px]">
             Ucapkan Sesuatu
           </h1>
@@ -84,7 +84,7 @@ const UcapkanSesuatu = () => {
             Berikan Ucapan & Doa Restu
           </h2>
         </div>
-        <div className="bg-[#F5F3EE] mx-3 mt-4">
+        <div className="bg-[#F5F3EE] mx-3 mt-4 rounded-b-xl">
           <p className="text-center font-secondary text-primary font-bold pt-4 text-sm">
             {comments.length} Comments
           </p>
