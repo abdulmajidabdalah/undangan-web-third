@@ -29,7 +29,7 @@ const KisahCinta = () => {
               <div className={styles.card}>
                 <div className={styles.textHeading}>
                   <h1>Awal Pertemuan</h1>
-                  <h1>04 / 02 / 2019</h1>
+                  <h1>00 / 00 / 2018</h1>
                 </div>
                 <p className={styles.bodytext}>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
@@ -48,7 +48,7 @@ const KisahCinta = () => {
               <div className={styles.card}>
                 <div className={styles.textHeading}>
                   <h1>Tunangan</h1>
-                  <h1>04 / 02 / 2021</h1>
+                  <h1>17 / 02 / 2021</h1>
                 </div>
                 <p className={styles.bodytext}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
@@ -67,7 +67,7 @@ const KisahCinta = () => {
               <div className={styles.card}>
                 <div className={styles.textHeading}>
                   <h1>Menikah</h1>
-                  <h1>20 / 04 / 2023</h1>
+                  <h1>09 / 07 / 2023</h1>
                 </div>
                 <p className={styles.bodytext}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

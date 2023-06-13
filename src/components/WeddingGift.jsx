@@ -48,10 +48,10 @@ const WeddingGift = () => {
           <div className="bg-[#426a69] h-[2px] mx-16 my-2 lg:my-6"></div>
           <div className="font-secondary text-center text-[20px] lg:text-[25px] text-white">
             <p>No. Rekening</p>
-            <p className="lg:my-5 my-2">1234567890</p>
+            <p className="lg:my-5 my-2">1272238720</p>
           </div>
           <div className="flex justify-center items-center">
-            <CopyToClipboard text={"1234567890"}>
+            <CopyToClipboard text={"1272238720"}>
               <button
                 className="bg-primary px-6 py-2 rounded-md font-secondary text-white"
                 onClick={onCopySatu}
@@ -84,10 +84,10 @@ const WeddingGift = () => {
           <div className="bg-[#426a69] h-[2px] mx-16 my-2 lg:my-6"></div>
           <div className="font-secondary text-center text-[20px] lg:text-[25px] text-white">
             <p>No. Rekening</p>
-            <p className="lg:my-5 my-2">1234567890</p>
+            <p className="lg:my-5 my-2">0119732786100</p>
           </div>
           <div className="flex justify-center items-center">
-            <CopyToClipboard text={"1234567890"}>
+            <CopyToClipboard text={"0119732786100"}>
               <button
                 className="bg-primary px-6 py-2 rounded-md font-secondary text-white"
                 onClick={onCopyDua}
@@ -106,7 +106,7 @@ const WeddingGift = () => {
             </CopyToClipboard>
           </div>
           <p className="font-secondary text-center text-[25px] text-white lg:mt-5 mt-3 pb-4">
-            an Yosep Ramdani
+            AN : Yosep Ramdani
           </p>
         </div>
         <div className={styles.card} data-aos="fade-id">
@@ -123,8 +123,7 @@ const WeddingGift = () => {
               Kirim Kado
             </p>
             <p className="px-2">
-              Kp. Houston RT/RW 03/01 Desa. Washington Kec. Las Pegas Kab. New
-              York
+              Kp. Ciawi RT/RW 22/04 Desa. Padasenang Kec. Cidadap Kab. Sukabumi
             </p>
             <p>Penerima : Sri Kartini</p>
           </div>

@@ -31,7 +31,7 @@ const ReservasiKehadiran = () => {
               placeholder="Berikan Pesan Dan Doa Restu"
               className="w-full py-2 text-[16px] bg-white rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
             />
-            <label>Konfirmasi</label>
+            <label className="text-white">Konfirmasi</label>
             <div className="mb-3 xl:w-96">
               <select
                 className="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"

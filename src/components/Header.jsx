@@ -50,7 +50,7 @@ const Header = () => {
           Yosep Ramdani & Sri Kartini
         </p>
         <p className="font-secondary text-center text-2xl mt-4 lg:mt-5">
-          09 July 2023
+          09 Juli 2023
         </p>
         </div>
         <div className="grid grid-cols-4 gap-4 px-4 lg:px-32 mt-4 lg:mt-[35px]">

@@ -32,8 +32,10 @@ const PasanganMempelai = () => {
               Sri Kartini
             </h1>
             <div className="font-secondary text-center lg:text-[26px] text-[22px] leading-relaxed text-white">
-              <p>Putri dari Bapak His Father</p>
-              <p>dan Ibu His Mother</p>
+              <p>Putri dari :</p>
+              <p>Bapak Dede</p>
+              <p>&</p>
+              <p>Ibu Anah</p>
             </div>
           </div>
         </div>
@@ -48,8 +50,10 @@ const PasanganMempelai = () => {
               Yosep Ramdani
             </h1>
             <div className="font-secondary text-center text-[22px] lg:text-[26px] leading-relaxed text-white">
-              <p>Putri dari Bapak His Father</p>
-              <p>dan Ibu His Mother</p>
+              <p>Putra dari :</p>
+              <p>Bapak (Alm) H. Anwar Abdussalam</p>
+              <p>&</p>
+              <p>Ibu Hj. Enung Nuriyah</p>
             </div>
           </div>
         </div>

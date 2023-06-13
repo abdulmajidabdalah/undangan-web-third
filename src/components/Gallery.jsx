@@ -1,9 +1,16 @@
 import React, {useEffect} from "react";
-import img1 from "../assets/1.jpg";
-// import img2 from "../assets/2.jpg";
-// import img3 from "../assets/3.jpg";
-// import img4 from "../assets/4.jpg";
-// import img5 from "../assets/5.jpg";
+import img1 from "../assets/gallery/1.jpg";
+import img2 from "../assets/gallery/2.jpg";
+import img3 from "../assets/gallery/3.jpg";
+import img4 from "../assets/gallery/4.jpg";
+import img5 from "../assets/gallery/5.jpg";
+import img6 from "../assets/gallery/6.jpg";
+import img7 from "../assets/gallery/7.jpg";
+import img8 from "../assets/gallery/8.jpg";
+import img9 from "../assets/gallery/9.jpg";
+import img10 from "../assets/gallery/10.jpg";
+import img11 from "../assets/gallery/11.jpg";
+import img12 from "../assets/gallery/12.jpg";
 import {initLightboxJS} from 'lightbox.js-react'
 import 'lightbox.js-react/dist/index.css'
 
@@ -37,7 +44,7 @@ const Gallery = () => {
         </h1>
         </div>
         <div className="bg-white/30 backdrop-brightness-50 py-5 px-2 mx-3 rounded-xl">
-        <SlideshowLightbox className="container grid grid-cols-3 gap-2 mx-auto" theme="lightbox">
+        <SlideshowLightbox className="container grid grid-cols-4 gap-2 mx-auto" theme="lightbox">
           <img
             className="w-full rounded"
             src={img1}
@@ -45,22 +52,57 @@ const Gallery = () => {
           />
           <img
             className="w-full rounded"
-            src={img1}
+            src={img2}
             alt="img"
           />
           <img
             className="w-full rounded"
-            src={img1}
+            src={img3}
             alt="img"
           />
           <img
             className="w-full rounded"
-            src={img1}
+            src={img4}
             alt="img"
           />
           <img
             className="w-full rounded"
-            src={img1}
+            src={img5}
+            alt="img"
+          />
+          <img
+            className="w-full rounded"
+            src={img6}
+            alt="img"
+          />
+          <img
+            className="w-full rounded"
+            src={img7}
+            alt="img"
+          />
+          <img
+            className="w-full rounded"
+            src={img8}
+            alt="img"
+          />
+          <img
+            className="w-full rounded"
+            src={img9}
+            alt="img"
+          />
+          <img
+            className="w-full rounded"
+            src={img10}
+            alt="img"
+          />
+          <img
+            className="w-full rounded"
+            src={img11}
+            alt="img"
+          />
+          <img
+            className="w-full rounded"
+            src={img12}
             alt="img"
           />
         </SlideshowLightbox>

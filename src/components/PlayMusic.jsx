@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import music from "../assets/music/Beautiful-In-White--Shane-Filan.mp3";
+import music from "../assets/music/Ed Sheeran - The Joker And The Queen.mp3";
 import useSound from "use-sound";
 
 const PlayMusic = () => {
@@ -19,12 +19,12 @@ const PlayMusic = () => {
     <div className="fixed z-40 lg:bottom-4 bottom-32 flex justify-end w-full pr-4">
       {!isPlaying ? (
         <i
-          class="icofont-ui-play icofont-2x text-[#9E795E]"
+          className="icofont-ui-play icofont-2x text-[#9E795E]"
           onClick={handlePlay}
         ></i>
       ) : (
         <i
-          class="icofont-ui-pause icofont-2x text-[#9E795E]"
+          className="icofont-ui-pause icofont-2x text-[#9E795E]"
           onClick={handlePlay}
         ></i>
       )}
