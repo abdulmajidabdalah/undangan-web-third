@@ -29,7 +29,7 @@ const WeddingEvent = () => {
                 data-aos="zoom-in"
                 data-aos-delay="500"
               >
-                <p>Minggu, 29 April 2023</p>
+                <p>Minggu, 09 Juli 2023</p>
                 <p>Pukul 11.00 WIB s/d Selesai</p>
                 <p>Kp. Ciawi RT/RW 22/04</p>
                 <p>Desa Padasenang</p>

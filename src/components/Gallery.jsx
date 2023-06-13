@@ -44,7 +44,7 @@ const Gallery = () => {
         </h1>
         </div>
         <div className="bg-white/30 backdrop-brightness-50 py-5 px-2 mx-3 rounded-xl">
-        <SlideshowLightbox className="container grid grid-cols-4 gap-2 mx-auto" theme="lightbox">
+        <SlideshowLightbox className="container grid lg:grid-cols-4 grid-cols-2 gap-2 mx-auto" theme="lightbox">
           <img
             className="w-full rounded"
             src={img1}

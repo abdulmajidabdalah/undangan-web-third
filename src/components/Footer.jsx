@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </footer>
       </div>
-      <div className="bg-[#2E2F3A] h-[40vh] font-footer text-center pt-8">
+      <div className="bg-black h-[40vh] font-footer text-center pt-8">
         <p>Copyright Abdul-Majid-Abdalah © 2023</p>
         <p>Abadikan Moment Spesial</p>
         <p className="mb-8">- All Rights Reserved -</p>
