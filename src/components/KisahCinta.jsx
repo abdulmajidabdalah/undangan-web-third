@@ -1,6 +1,7 @@
 import React from "react";
 import { RiHeartsFill } from "react-icons/ri";
 import img from "../assets/tunangan.jpeg"
+import {Zoom} from 'react-awesome-reveal'
 
 export const styleHeading =
   "bg-primary lg:h-[120px] flex justify-center items-center font-mempelai lg:text-[80px] py-2 leading-relaxed text-white text-3xl border-t-4 border-b-4 border-dotted border-white";
@@ -70,9 +71,9 @@ const KisahCinta = () => {
                   <h1>Menikah</h1>
                   <h1>09 / 07 / 2023</h1>
                 </div>
-                <p className={styles.bodytext}>
+                <Zoom triggerOnce={true} className={styles.bodytext}>
                  Dan pada akhirnya kami sampailah ke titik dimana yang kami harapkan dari awal menjalani hubungan, yaitu ke jenjang pernikahan. Semoga setelah kami menikah nanti bisa menjadi keluarga yang sakinah mawadah warrahmah. Amiin amiin yaallah yarrabbal'alamiin.  
-                </p>
+                </Zoom>
               </div>
             </div>
           </li>
