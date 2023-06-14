@@ -1,5 +1,6 @@
 import React from "react";
 import { RiHeartsFill } from "react-icons/ri";
+import img from "../assets/tunangan.jpeg"
 
 export const styleHeading =
   "bg-primary lg:h-[120px] flex justify-center items-center font-mempelai lg:text-[80px] py-2 leading-relaxed text-white text-3xl border-t-4 border-b-4 border-dotted border-white";
@@ -50,11 +51,11 @@ const KisahCinta = () => {
                   <h1>Tunangan</h1>
                   <h1>17 / 02 / 2021</h1>
                 </div>
+                <div className="mb-3" data-aos="zoom-in">
+                <img src={img} alt="tunangan" className="object-cover object-center rounded-tl-3xl rounded-br-3xl border border-white"/>
+                </div>
                 <p className={styles.bodytext}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  vitae tenetur molestiae architecto deleniti doloremque
-                  similique soluta velit obcaecati ratione accusantium dolores
-                  doloribus est mollitia, molestias aliquam. Et, eaque ullam?
+                  Tepat pada 17 Februari 2021 kami memutuskan untuk bertunangan.
                 </p>
               </div>
             </div>
@@ -70,10 +71,7 @@ const KisahCinta = () => {
                   <h1>09 / 07 / 2023</h1>
                 </div>
                 <p className={styles.bodytext}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusamus repudiandae, cumque voluptatem incidunt recusandae,
-                  voluptas asperiores dolor illum soluta vel nulla facere. Rem
-                  beatae tenetur saepe sint esse officiis repudiandae.
+                 Dan pada akhirnya kami sampailah ke titik dimana yang kami harapkan dari awal menjalani hubungan, yaitu ke jenjang pernikahan. Semoga setelah kami menikah nanti bisa menjadi keluarga yang sakinah mawadah warrahmah. Amiin amiin yaallah yarrabbal'alamiin.  
                 </p>
               </div>
             </div>

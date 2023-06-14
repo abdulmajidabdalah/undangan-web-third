@@ -16,7 +16,7 @@ const PlayMusic = () => {
     }
   };
   return (
-    <div className="fixed z-40 lg:bottom-4 bottom-32 flex justify-end w-full pr-4">
+    <div className="fixed z-40 lg:bottom-4 bottom-5 flex justify-end lg:right-4 right-1">
       {!isPlaying ? (
         <i
           className="icofont-ui-play icofont-2x text-[#9E795E]"
