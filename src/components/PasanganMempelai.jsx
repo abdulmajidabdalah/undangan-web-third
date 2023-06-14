@@ -39,7 +39,7 @@ const PasanganMempelai = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center mt-4 lg:mt-8 pb-10 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="700">
+        <div className="flex justify-center items-center mt-4 lg:mt-8 pb-10 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl" data-aos="fade-left" data-aos-delay="500">
           <div>
             <img
               src={pria}

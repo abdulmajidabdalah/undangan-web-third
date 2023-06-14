@@ -138,7 +138,7 @@ const UcapkanSesuatu = () => {
               Kirim
             </button>
           </form>
-          <div className="overflow-auto h-52">
+          <div className="overflow-auto h-72">
             <ul className="border border-t-primary w-full text-gray-900">
               {comments.map((comment, index) => (
                 <li className="px-4 py-2 border-b border-primary" key={index}>

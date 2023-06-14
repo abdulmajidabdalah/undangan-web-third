@@ -7,7 +7,7 @@ export const styleHeading =
 const styles = {
   border:
     "-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700",
-  card: "ml-6 mb-10 block max-w-md rounded-lg bg-white/30 backdrop-brightness-50 text-white p-6 shadow-lg shadow-black border-2 border-primary",
+  card: "ml-6 mb-10 block max-w-md rounded-tl-2xl rounded-br-2xl bg-white/30 backdrop-brightness-50 text-white p-6 shadow-lg shadow-black border-2 border-white",
   textHeading: "mb-4 flex justify-between font-bold",
   icon: "text-[#FF597B]",
   bodyText: "mb-6 text-primary",
@@ -26,7 +26,7 @@ const KisahCinta = () => {
               <div className={styles.border}>
                 <RiHeartsFill size={30} className={styles.icon} />
               </div>
-              <div className={styles.card}>
+              <div className={styles.card} data-aos="fade-down-right">
                 <div className={styles.textHeading}>
                   <h1>Awal Pertemuan</h1>
                   <h1>00 / 00 / 2018</h1>
@@ -45,7 +45,7 @@ const KisahCinta = () => {
               <div className={styles.border}>
                 <RiHeartsFill size={30} className={styles.icon} />
               </div>
-              <div className={styles.card}>
+              <div className={styles.card} data-aos="fade-down-left">
                 <div className={styles.textHeading}>
                   <h1>Tunangan</h1>
                   <h1>17 / 02 / 2021</h1>
@@ -64,7 +64,7 @@ const KisahCinta = () => {
               <div className={styles.border}>
                 <RiHeartsFill size={30} className={styles.icon} />
               </div>
-              <div className={styles.card}>
+              <div className={styles.card} data-aos="fade-up">
                 <div className={styles.textHeading}>
                   <h1>Menikah</h1>
                   <h1>09 / 07 / 2023</h1>

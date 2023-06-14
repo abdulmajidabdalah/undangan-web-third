@@ -7,22 +7,23 @@ import jarak from "../assets/jarak.png";
 const Footer = () => {
   return (
     <>
-      <div className="lg:mx-[174px] bg-bg-mempelai pt-10 pb-5">
+      <div className="lg:mx-[174px] bg-hero-pattern bg-center bg-no-repeat bg-cover pt-10 pb-5">
         <footer>
           <img
             src={IMG}
             alt="IMG"
-            className="lg:h-[300px] lg:w-[300px] h-[250px] w-[250px] rounded-[50%] object-cover m-auto"
+            className="lg:h-[300px] lg:w-[300px] h-[250px] w-[250px] rounded-[50%] object-cover m-auto border-2 border-white"
           />
-          <div className="text-center">
-            <p className="font-mempelai text-3xl py-3">Yosep Ramdani & Sri Kartini</p>
+          <div className="text-center bg-white lg:mx-32 mx-2 py-10 mt-3 rounded-tl-2xl rounded-br-2xl" data-aos="zoom-out-right">
+            <p className="font-mempelai text-3xl lg:text-5xl py-3">Yosep Ramdani & Sri Kartini</p>
             <p className="font-secondary text-[25px] text-[#696969] my-4 lg:my-8">
               Atas kehadiran dan doa restunya, kami ucapkan terimakasih.
             </p>
-            <p className="font-secondary text-[30px] text-primary">
+          </div>
+          <div className="bg-white lg:mx-10 mx-2 pt-3 mt-20 rounded-tr-3xl rounded-bl-3xl" data-aos="zoom-out-left" data-aos-delay="700">
+            <p className="font-secondary text-[30px] text-primary text-center">
               PROTOKOL KESEHATAN
             </p>
-          </div>
           <div className="flex justify-center items-center my-12 lg:gap-0 lg:mx-0 gap-2 mx-2">
             <div className="lg:px-16">
               <img
@@ -54,6 +55,7 @@ const Footer = () => {
                 Jaga Jarak
               </p>
             </div>
+          </div>
           </div>
         </footer>
       </div>
