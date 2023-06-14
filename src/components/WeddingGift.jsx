@@ -23,10 +23,10 @@ const WeddingGift = () => {
     <>
       <div className="lg:mx-[174px] bg-bg-main bg-center bg-cover bg-no-repeat pb-8 pt-3">
         <div className="bg-white rounded-t-[50%] px-4 pb-4">
-          <h1 className="font-mempelai text-[#426a69] text-center pt-8 lg:pt-24 lg:text-8xl text-5xl" data-aos="zoom-in">
+          <h1 className="font-mempelai text-[#426a69] text-center pt-8 lg:pt-24 lg:text-8xl text-5xl">
             Wedding Gift
           </h1>
-          <div className="font-secondary text-center text-[#696969] text-[22px] lg:text-[26px] lg:pt-10 pt-4" data-aos="zoom-out" data-aos-delay="500">
+          <div className="font-secondary text-center text-[#696969] text-[22px] lg:text-[26px] lg:pt-10 pt-4">
             <p>
               Doa restu anda merupakan karunia yang sangat berarti bagi kami.
               Dan jika memberi
@@ -37,7 +37,7 @@ const WeddingGift = () => {
             </p>
           </div>
         </div>
-        <div className={styles.card} data-aos="fade-left">
+        <div className={styles.card}>
           <div className="flex justify-center items-center">
             <img
               src={bni}
@@ -73,7 +73,7 @@ const WeddingGift = () => {
             AN : Sri Kartini
           </p>
         </div>
-        <div className={styles.card} data-aos="fade-right" data-aos-delay="500">
+        <div className={styles.card}>
           <div className="flex justify-center items-center">
             <img
               src={bjb}
@@ -109,7 +109,7 @@ const WeddingGift = () => {
             AN : Yosep Ramdani
           </p>
         </div>
-        <div className={styles.card} data-aos="fade-id">
+        <div className={styles.card}>
           <div className="flex justify-center items-center">
             <img
               src={gift}
@@ -128,7 +128,7 @@ const WeddingGift = () => {
             <p>Penerima : Sri Kartini</p>
           </div>
         </div>
-        <div className="bg-white mx-16 shadow-md shadow-black mt-8" data-aos="fade-out" data-aos-delay="500">
+        <div className="bg-white mx-16 shadow-md shadow-black mt-8">
           <form
             action=""
             className="grid grid-cols-1 p-2 font-secondary text-[16px]"

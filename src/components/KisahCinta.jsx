@@ -27,7 +27,7 @@ const KisahCinta = () => {
               <div className={styles.border}>
                 <RiHeartsFill size={30} className={styles.icon} />
               </div>
-              <div className={styles.card} data-aos="fade-down-right">
+              <div className={styles.card}>
                 <div className={styles.textHeading}>
                   <h1>Awal Pertemuan</h1>
                   <h1>00 / 00 / 2018</h1>
@@ -46,12 +46,12 @@ const KisahCinta = () => {
               <div className={styles.border}>
                 <RiHeartsFill size={30} className={styles.icon} />
               </div>
-              <div className={styles.card} data-aos="fade-down-left">
+              <div className={styles.card}>
                 <div className={styles.textHeading}>
                   <h1>Tunangan</h1>
                   <h1>17 / 02 / 2021</h1>
                 </div>
-                <div className="mb-3" data-aos="zoom-in">
+                <div className="mb-3">
                 <img src={img} alt="tunangan" className="object-cover object-center rounded-tl-3xl rounded-br-3xl border border-white"/>
                 </div>
                 <p className={styles.bodytext}>
@@ -65,7 +65,7 @@ const KisahCinta = () => {
               <div className={styles.border}>
                 <RiHeartsFill size={30} className={styles.icon} />
               </div>
-              <div className={styles.card} data-aos="fade-up">
+              <div className={styles.card}>
                 <div className={styles.textHeading}>
                   <h1>Menikah</h1>
                   <h1>09 / 07 / 2023</h1>

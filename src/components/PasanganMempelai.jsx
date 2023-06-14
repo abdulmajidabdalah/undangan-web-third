@@ -1,6 +1,8 @@
 import React from "react";
 import wanita from "../assets/sri.jpg";
 import pria from "../assets/yosep.jpg";
+import { Slide, Zoom } from "react-awesome-reveal";
+
 
 const PasanganMempelai = () => {
   return (
@@ -10,18 +12,17 @@ const PasanganMempelai = () => {
         id="couple"
       >
         <div className="bg-white rounded-t-[50%]">
-          <h1
+          <Slide triggerOnce={true}
             className="font-pasangan text-center pt-8 lg:pt-[60px] lg:text-6xl text-4xl"
-            data-aos="fade-up"
           >
             Pasangan Mempelai
-          </h1>
-          <article className="text-center font-secondary lg:text-[26px] text-[22px] leading-relaxed lg:mx-[247px] mx-4 mt-4 lg:mt-[55px]" data-aos="zoom-out">
+          </Slide>
+          <Zoom className="text-center font-secondary lg:text-[26px] text-[22px] leading-relaxed lg:mx-[247px] mx-4 mt-4 lg:mt-[55px]">
             Tanpa mengurangi rasa hormat, kami bermaksud mengundang
             Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:
-          </article>
+          </Zoom>
         </div>
-        <div className="flex justify-center items-center mt-6 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl" data-aos="fade-right" data-aos-duration="2000">
+        <div className="flex justify-center items-center mt-6 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl">
           <div>
             <img
               src={wanita}
@@ -39,7 +40,7 @@ const PasanganMempelai = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center mt-4 lg:mt-8 pb-10 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl" data-aos="fade-left" data-aos-delay="500">
+        <div className="flex justify-center items-center mt-4 lg:mt-8 pb-10 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl">
           <div>
             <img
               src={pria}

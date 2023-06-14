@@ -14,7 +14,6 @@ const WeddingEvent = () => {
             <h1 className="font-mempelai">Akad Nikah</h1>
             <div
               className="lg:text-[26px] text-[18px] py-1 text-white"
-              data-aos="zoom-in"
             >
               <p>Minggu, 09 Juli 2023</p>
               <p>Pukul 09.00 WIB</p>
@@ -26,8 +25,6 @@ const WeddingEvent = () => {
               <h1 className="font-mempelai">Resepsi</h1>
               <div
                 className="lg:text-[26px] text-[18px] py-1 text-white"
-                data-aos="zoom-in"
-                data-aos-delay="500"
               >
                 <p>Minggu, 09 Juli 2023</p>
                 <p>Pukul 11.00 WIB s/d Selesai</p>
