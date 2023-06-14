@@ -9,13 +9,13 @@ import ReservasiKehadiran from "./ReservasiKehadiran";
 import UcapkanSesuatu from "./UcapkanSesuatu";
 import WeddingEvent from "./WeddingEvent";
 import WeddingGift from "./WeddingGift";
-// import Cover from "./Cover";
 import PlayMusic from "./PlayMusic";
 
 const Main = () => {
   return (
     <>
-      {/* <Cover /> */}
+      <PlayMusic />
+      <Navigation />
       <Header />
       <PasanganMempelai />
       <KisahCinta />
@@ -25,8 +25,6 @@ const Main = () => {
       <ReservasiKehadiran />
       <UcapkanSesuatu />
       <Footer />
-      <Navigation />
-      <PlayMusic />
     </>
   );
 };
