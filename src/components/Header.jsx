@@ -46,7 +46,7 @@ const Header = () => {
         <p className="font-secondary text-center text-2xl pt-4 lg:pt-[70px]">
           The Wedding Of
         </p>
-        <p className="font-mempelai text-center text-3xl lg:text-6xl mt-4 lg:mt-10" data-aos="zoom-in">
+        <p className="font-mempelai text-center text-3xl lg:text-6xl mt-4 lg:mt-10">
           Yosep Ramdani & Sri Kartini
         </p>
         <p className="font-secondary text-center text-2xl mt-4 lg:mt-5">
@@ -54,7 +54,7 @@ const Header = () => {
         </p>
         </div>
         <div className="grid grid-cols-4 gap-4 px-4 lg:px-32 mt-4 lg:mt-[35px]">
-          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg" data-aos="flip-down" data-aos-delay="600">
+          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg">
             <div className="text-center font-button-cover text-white">
               <p className="lg:text-[50px] text-[35px] leading-[40px] lg:leading-[65px]">
                 {timerDays}
@@ -62,7 +62,7 @@ const Header = () => {
               <p className="text-[18px] leading-[18px]">Hari</p>
             </div>
           </div>
-          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg" data-aos="flip-up" data-aos-delay="600">
+          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg">
             <div className="text-center font-button-cover text-white">
               <p className="lg:text-[50px] text-[35px] leading-[40px] lg:leading-[65px]">
                 {timerHours}
@@ -70,7 +70,7 @@ const Header = () => {
               <p className="text-[18px] leading-[18px]">Jam</p>
             </div>
           </div>
-          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg" data-aos="flip-down" data-aos-delay="600">
+          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg">
             <div className="text-center font-button-cover text-white">
               <p className="lg:text-[50px] text-[35px] leading-[40px] lg:leading-[65px]">
                 {timerMinutes}
@@ -78,7 +78,8 @@ const Header = () => {
               <p className="text-[18px] leading-[18px]">Menit</p>
             </div>
           </div>
-          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg" data-aos="flip-up" data-aos-delay="600">
+          {/* data-aos="flip-up" data-aos-delay="600" */}
+          <div className="bg-[#9E795E] flex justify-center items-center h-[80px] lg:h-[103px] rounded-lg">
             <div className="text-center font-button-cover text-white">
               <p className="lg:text-[50px] text-[35px] leading-[40px] lg:leading-[65px]">
                 {timerSeconds}
@@ -91,8 +92,8 @@ const Header = () => {
           <p
             align="justify"
             className="text-center lg:text-current text-[22px]"
-            data-aos="zoom-in"
-            data-aos-delay="800"
+            // data-aos="zoom-in"
+            // data-aos-delay="800"
           >
             " Dan di antara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu
             pasangan hidup dari jenismu sendiri supaya kamu dapat ketenangan

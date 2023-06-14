@@ -14,13 +14,15 @@ const Footer = () => {
             alt="IMG"
             className="lg:h-[300px] lg:w-[300px] h-[250px] w-[250px] rounded-[50%] object-cover m-auto border-2 border-white"
           />
-          <div className="text-center bg-white lg:mx-32 mx-2 py-10 mt-3 rounded-tl-2xl rounded-br-2xl" data-aos="zoom-out-right">
+          <div className="text-center bg-white lg:mx-32 mx-2 py-10 mt-3 rounded-tl-2xl rounded-br-2xl">
+          {/* data-aos="zoom-out-right" */}
             <p className="font-mempelai text-3xl lg:text-5xl py-3">Yosep Ramdani & Sri Kartini</p>
             <p className="font-secondary text-[25px] text-[#696969] my-4 lg:my-8">
               Atas kehadiran dan doa restunya, kami ucapkan terimakasih.
             </p>
           </div>
-          <div className="bg-white lg:mx-10 mx-2 pt-3 mt-20 rounded-tr-3xl rounded-bl-3xl" data-aos="zoom-out-left" data-aos-delay="700">
+          {/* data-aos="zoom-out-left" data-aos-delay="700" */}
+          <div className="bg-white lg:mx-10 mx-2 pt-3 mt-20 rounded-tr-3xl rounded-bl-3xl">
             <p className="font-secondary text-[30px] text-primary text-center">
               PROTOKOL KESEHATAN
             </p>
