@@ -15,6 +15,7 @@ import {initLightboxJS} from 'lightbox.js-react'
 import 'lightbox.js-react/dist/index.css'
 
 import { SlideshowLightbox } from "lightbox.js-react";
+import {Fade} from 'react-awesome-reveal'
 
 // Import Swiper React components
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -38,10 +39,11 @@ const Gallery = () => {
   return (
     <>
       <div className="bg-bg-main bg-center bg-no-repeat bg-cover lg:mx-[174px] py-2" id="gallery">
-        <div className="bg-white/30 backdrop-brightness-50 py-2 mb-3 mx-4 rounded-3xl">
-        <h1 className="font-mempelai text-center text-white">
+        <div className="bg-white/30 backdrop-brightness-50 py-2 mb-3 mx-4 rounded-3xl flex justify-center items-center">
+        <Fade delay={1e3} cascade damping={1e-1} triggerOnce={true}
+         className="font-mempelai text-center text-white">
           Our Gallery
-        </h1>
+        </Fade>
         </div>
         <div className="bg-white/30 backdrop-brightness-50 py-5 px-2 mx-3 rounded-xl">
         <SlideshowLightbox className="container grid lg:grid-cols-4 grid-cols-2 gap-2 mx-auto" theme="lightbox">

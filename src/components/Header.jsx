@@ -48,7 +48,7 @@ const Header = () => {
             The Wedding Of
           </p>
           <div className="flex justify-center items-center">
-            <Fade delay={1e3} cascade damping={1e-1} className="font-mempelai text-center text-3xl lg:text-6xl mt-4 lg:mt-10">
+            <Fade delay={1e3} cascade damping={1e-1} triggerOnce={true} className="font-mempelai text-center text-3xl lg:text-6xl mt-4 lg:mt-10">
               Yosep Ramdani & Sri Kartini
             </Fade>
           </div>

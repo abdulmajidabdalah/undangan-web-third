@@ -1,7 +1,7 @@
 import React from "react";
 import { RiHeartsFill } from "react-icons/ri";
 import img from "../assets/tunangan.jpeg"
-import {Zoom} from 'react-awesome-reveal'
+import {Zoom, Slide} from 'react-awesome-reveal'
 
 export const styleHeading =
   "bg-primary lg:h-[120px] flex justify-center items-center font-mempelai lg:text-[80px] py-2 leading-relaxed text-white text-3xl border-t-4 border-b-4 border-dotted border-white";
@@ -19,7 +19,9 @@ const KisahCinta = () => {
   return (
     <>
       <div className={styleHeading}>
+        <Slide direction="left" duration={2000} triggerOnce={true}>
         <p>Kisah Perjalanan Cinta</p>
+        </Slide>
       </div>
       <div className="lg:mx-[174px] px-4 bg-bg-main bg-center bg-no-repeat bg-cover bg-fixed py-8 flex justify-center items-center">
         <ol className="border-l-2 border-info-100">
@@ -33,12 +35,12 @@ const KisahCinta = () => {
                   <h1>Awal Pertemuan</h1>
                   <h1>00 / 00 / 2018</h1>
                 </div>
-                <p className={styles.bodytext}>
+                <Zoom direction="in" duration={2000} triggerOnce={true} className={styles.bodytext}>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
                   minus ut incidunt vel necessitatibus. Repellat alias eum quis
                   nostrum temporibus numquam exercitationem debitis nulla?
                   Laudantium quam quasi totam quis id.
-                </p>
+                </Zoom>
               </div>
             </div>
           </li>
@@ -52,9 +54,9 @@ const KisahCinta = () => {
                   <h1>Tunangan</h1>
                   <h1>17 / 02 / 2021</h1>
                 </div>
-                <div className="mb-3">
+                <Zoom direction="in" duration={2000} delay={1000} triggerOnce={true} className="mb-3">
                 <img src={img} alt="tunangan" className="object-cover object-center rounded-tl-3xl rounded-br-3xl border border-white"/>
-                </div>
+                </Zoom>
                 <p className={styles.bodytext}>
                   Tepat pada 17 Februari 2021 kami memutuskan untuk bertunangan.
                 </p>
@@ -71,7 +73,7 @@ const KisahCinta = () => {
                   <h1>Menikah</h1>
                   <h1>09 / 07 / 2023</h1>
                 </div>
-                <Zoom triggerOnce={true} className={styles.bodytext}>
+                <Zoom direction="in" duration={2000} delay={1500} triggerOnce={true} className={styles.bodytext}>
                  Dan pada akhirnya kami sampailah ke titik dimana yang kami harapkan dari awal menjalani hubungan, yaitu ke jenjang pernikahan. Semoga setelah kami menikah nanti bisa menjadi keluarga yang sakinah mawadah warrahmah. Amiin amiin yaallah yarrabbal'alamiin.  
                 </Zoom>
               </div>

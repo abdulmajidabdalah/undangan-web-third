@@ -3,6 +3,7 @@ import IMG from "../assets/img-cover.jpg";
 import cuci from "../assets/cuci.png";
 import masker from "../assets/masker.png";
 import jarak from "../assets/jarak.png";
+import { Fade } from "react-awesome-reveal";
 
 const Footer = () => {
   return (
@@ -14,12 +15,15 @@ const Footer = () => {
             alt="IMG"
             className="lg:h-[300px] lg:w-[300px] h-[250px] w-[250px] rounded-[50%] object-cover m-auto border-2 border-white"
           />
+          <Fade direction="left" duration={2000} triggerOnce={true}>
           <div className="text-center bg-white lg:mx-32 mx-2 py-10 mt-3 rounded-tl-2xl rounded-br-2xl">
             <p className="font-mempelai text-3xl lg:text-5xl py-3">Yosep Ramdani & Sri Kartini</p>
             <p className="font-secondary text-[25px] text-[#696969] my-4 lg:my-8">
               Atas kehadiran dan doa restunya, kami ucapkan terimakasih.
             </p>
           </div>
+          </Fade>
+          <Fade direction="right" duration={2000} delay={1000} triggerOnce={true}>
           <div className="bg-white lg:mx-10 mx-2 pt-3 mt-20 rounded-tr-3xl rounded-bl-3xl">
             <p className="font-secondary text-[30px] text-primary text-center">
               PROTOKOL KESEHATAN
@@ -57,6 +61,7 @@ const Footer = () => {
             </div>
           </div>
           </div>
+          </Fade>
         </footer>
       </div>
       <div className="bg-black h-[40vh] font-footer text-center pt-8">

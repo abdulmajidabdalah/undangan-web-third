@@ -3,6 +3,7 @@ import bni from "../assets/bni.png";
 import bjb from "../assets/bjb.png";
 import gift from "../assets/gift.png";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import {Flip, Zoom} from 'react-awesome-reveal'
 
 const styles = {
   card : "bg-white/30 backdrop-blur-2xl mx-16 lg:h-[490px] rounded-lg shadow-lg shadow-black lg:mt-20 mt-5"
@@ -23,9 +24,12 @@ const WeddingGift = () => {
     <>
       <div className="lg:mx-[174px] bg-bg-main bg-center bg-cover bg-no-repeat pb-8 pt-3">
         <div className="bg-white rounded-t-[50%] px-4 pb-4">
+          <Flip duration={1000} triggerOnce={true}>
           <h1 className="font-mempelai text-[#426a69] text-center pt-8 lg:pt-24 lg:text-8xl text-5xl">
             Wedding Gift
           </h1>
+          </Flip>
+          <Zoom direction="in" duration={2000} triggerOnce={true}>
           <div className="font-secondary text-center text-[#696969] text-[22px] lg:text-[26px] lg:pt-10 pt-4">
             <p>
               Doa restu anda merupakan karunia yang sangat berarti bagi kami.
@@ -36,15 +40,16 @@ const WeddingGift = () => {
               secara cashless
             </p>
           </div>
+          </Zoom>
         </div>
         <div className={styles.card}>
-          <div className="flex justify-center items-center">
+          <Zoom direction="out" duration={2000} triggerOnce={true} className="flex justify-center items-center">
             <img
               src={bni}
               alt=""
               className="lg:w-[290px] lg:h-[180px] w-[100px] mt-5 object-center"
             />
-          </div>
+          </Zoom>
           <div className="bg-[#426a69] h-[2px] mx-16 my-2 lg:my-6"></div>
           <div className="font-secondary text-center text-[20px] lg:text-[25px] text-white">
             <p>No. Rekening</p>
@@ -74,13 +79,13 @@ const WeddingGift = () => {
           </p>
         </div>
         <div className={styles.card}>
-          <div className="flex justify-center items-center">
+          <Zoom direction="out" duration={2000} triggerOnce={true} className="flex justify-center items-center">
             <img
               src={bjb}
               alt=""
               className="lg:w-[290px] lg:h-[180px] w-[100px] mt-5 object-center"
             />
-          </div>
+          </Zoom>
           <div className="bg-[#426a69] h-[2px] mx-16 my-2 lg:my-6"></div>
           <div className="font-secondary text-center text-[20px] lg:text-[25px] text-white">
             <p>No. Rekening</p>
@@ -110,13 +115,13 @@ const WeddingGift = () => {
           </p>
         </div>
         <div className={styles.card}>
-          <div className="flex justify-center items-center">
+          <Zoom direction="out" duration={2000} triggerOnce={true} className="flex justify-center items-center">
             <img
               src={gift}
               alt=""
               className="lg:w-[250px] lg:h-[180px] w-[100px] mt-5"
             />
-          </div>
+          </Zoom>
           <div className="bg-[#426a69] h-[2px] mx-16 mb-6 mt-3"></div>
           <div className="font-secondary text-center text-[20px] lg:text-[25px] text-white leading-relaxed pb-8">
             <p className="lg:my-4 font-semibold lg:text-current text-2xl">
