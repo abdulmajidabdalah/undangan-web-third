@@ -1,7 +1,7 @@
 import React from "react";
 import wanita from "../assets/sri.jpg";
 import pria from "../assets/yosep.jpg";
-import { Zoom, Fade, Flip } from "react-awesome-reveal";
+import { Zoom, Flip } from "react-awesome-reveal";
 
 const PasanganMempelai = () => {
   return (
@@ -30,7 +30,7 @@ const PasanganMempelai = () => {
           </Zoom>
         </div>
         <div className="flex justify-center items-center mt-6 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl">
-          <Fade direction="left" duration={2000} triggerOnce={true} delay={2000}>
+          <Zoom duration={2000} triggerOnce={true} delay={2000}>
             <div>
               <img
                 src={wanita}
@@ -47,11 +47,10 @@ const PasanganMempelai = () => {
                 <p>Ibu Anah</p>
               </div>
             </div>
-          </Fade>
+          </Zoom>
         </div>
         <div className="flex justify-center items-center mt-4 lg:mt-8 pb-10 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl">
-          <Fade
-            direction="right"
+          <Zoom
             duration={2000}
             delay={1000}
             triggerOnce={true}
@@ -72,7 +71,7 @@ const PasanganMempelai = () => {
                 <p>Ibu Hj. Enung Nuriyah</p>
               </div>
             </div>
-          </Fade>
+          </Zoom>
         </div>
       </div>
     </>

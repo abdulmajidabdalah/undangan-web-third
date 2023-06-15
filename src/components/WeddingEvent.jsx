@@ -7,7 +7,7 @@ const WeddingEvent = () => {
   return (
     <>
       <div className={styleHeading} id="event">
-        <Slide direction="right" duration={2000} triggerOnce={true}>
+        <Slide direction="left" duration={2000} triggerOnce={true}>
         <p>Our Wedding Event</p>
         </Slide>
       </div>
