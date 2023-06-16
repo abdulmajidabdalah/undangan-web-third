@@ -26,7 +26,7 @@ const PlayMusic = () => {
           null
           )
           :
-          <div className="bg-gray-500 rounded-md lg:py-1 py-0 lg:px-5 px-1 lg:text-white text-white lg:text-sm text-[12px] flex justify-end items-center">
+          <div className="bg-gray-500 rounded-md lg:py-1 lg:h-8 py-0 lg:px-5 px-1 lg:text-white text-white lg:text-sm text-[12px] flex justify-end items-center">
             <p>play the song </p>
             <BiRightArrowAlt className="mt-1 ml-1"/>
           </div>

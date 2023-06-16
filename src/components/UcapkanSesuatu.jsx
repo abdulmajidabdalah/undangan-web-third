@@ -20,7 +20,6 @@ const UcapkanSesuatu = () => {
     createdAt: Timestamp.now().toDate(),
   });
   const [konfirmasi, setKonfirmasi] = useState("");
-  console.info(comments);
 
   // Create Comments
 
