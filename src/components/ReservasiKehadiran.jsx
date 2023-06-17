@@ -14,7 +14,6 @@ const ReservasiKehadiran = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(name, qty, message, confirm);
     const data = {
       Nama: name,
       Jumlah: qty,
@@ -32,7 +31,7 @@ const ReservasiKehadiran = () => {
         setQty("");
         setMessage("");
         setConfirm("");
-        toast.success("Terima Kasih :)", {
+        toast.success(`Terima Kasih ${name} :)`, {
           position: "top-center",
           autoClose: 2000,
           hideProgressBar: false,

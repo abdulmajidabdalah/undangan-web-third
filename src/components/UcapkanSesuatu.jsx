@@ -85,7 +85,7 @@ const UcapkanSesuatu = () => {
         </div>
         <div className="bg-[#F5F3EE] mx-3 mt-4 rounded-b-xl">
           <p className="text-center font-secondary text-primary font-bold pt-4 text-sm">
-            {comments.length} Comments
+            {comments.length} Komentar
           </p>
           <div className="flex justify-center items-center gap-3 mt-4">
             <div className={`bg-green-700 ${styles.btnTop}`}>
@@ -103,7 +103,7 @@ const UcapkanSesuatu = () => {
             </div>
           </div>
           <div className="bg-primary h-[1px] my-4"></div>
-          <form className="px-4 font-secondary" onSubmit={handleSubmit}>
+          <form autoComplete="off" className="px-4 font-secondary" onSubmit={handleSubmit}>
             <input
               type="text"
               className={`py-2 ${styles.input}`}
