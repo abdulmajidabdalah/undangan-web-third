@@ -109,6 +109,7 @@ const UcapkanSesuatu = () => {
               className={`py-2 ${styles.input}`}
               placeholder="Nama"
               name="nama"
+              required
               value={formData.nama}
               onChange={(e) => handleChange(e)}
             />
@@ -117,6 +118,7 @@ const UcapkanSesuatu = () => {
               type="text"
               className={styles.input}
               placeholder="Ucapan"
+              required
               value={formData.ucapan}
               name="ucapan"
               onChange={(e) => handleChange(e)}
@@ -125,6 +127,7 @@ const UcapkanSesuatu = () => {
               <select
                 className="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-primary rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 aria-label="Default select example"
+                required
                 value={konfirmasi}
                 onChange={(e) => setKonfirmasi(e.target.value)}
               >
