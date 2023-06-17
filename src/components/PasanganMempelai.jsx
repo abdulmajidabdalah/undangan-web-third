@@ -1,7 +1,7 @@
 import React from "react";
 import wanita from "../assets/sri.jpg";
 import pria from "../assets/yosep.jpg";
-import { Zoom, Flip } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const PasanganMempelai = () => {
   return (
@@ -11,22 +11,18 @@ const PasanganMempelai = () => {
         id="couple"
       >
         <div className="bg-white rounded-t-[50%]">
-          <Flip duration={1500}
+          <Zoom
+            duration={1500}
             triggerOnce={true}
             className="font-pasangan text-center pt-8 lg:pt-[60px] lg:text-6xl text-4xl"
           >
             Pasangan Mempelai
-          </Flip>
-          <Zoom
-            direction="in"
-            delay={1500}
-              triggerOnce={true}>
-          <p
-            className="text-center font-secondary lg:text-[26px] text-[22px] leading-relaxed lg:mx-[247px] mx-4 mt-4 lg:mt-[55px]"
-          >
-            Tanpa mengurangi rasa hormat, kami bermaksud mengundang
-            Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:
-          </p>
+          </Zoom>
+          <Zoom direction="in" delay={1500} triggerOnce={true}>
+            <p className="text-center font-secondary lg:text-[26px] text-[22px] leading-relaxed lg:mx-[247px] mx-4 mt-4 lg:mt-[55px]">
+              Tanpa mengurangi rasa hormat, kami bermaksud mengundang
+              Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:
+            </p>
           </Zoom>
         </div>
         <div className="flex justify-center items-center mt-6 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl">
@@ -50,11 +46,7 @@ const PasanganMempelai = () => {
           </Zoom>
         </div>
         <div className="flex justify-center items-center mt-4 lg:mt-8 pb-10 bg-white/30 backdrop-brightness-50 py-5 mx-5 rounded-xl">
-          <Zoom
-            duration={2000}
-            delay={1000}
-            triggerOnce={true}
-          >
+          <Zoom duration={2000} delay={1000} triggerOnce={true}>
             <div>
               <img
                 src={pria}

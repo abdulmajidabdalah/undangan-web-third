@@ -3,7 +3,7 @@ import bni from "../assets/bni.png";
 import bjb from "../assets/bjb.png";
 import gift from "../assets/gift.png";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { Flip, Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import axios from "axios";
 import { Slide, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -62,12 +62,12 @@ const WeddingGift = () => {
     <>
       <div className="lg:mx-[174px] bg-bg-main bg-center bg-cover bg-no-repeat pb-8 pt-3">
         <div className="bg-white rounded-t-[50%] px-4 pb-4">
-          <Flip duration={1000} triggerOnce={true}>
+          <Zoom duration={1000} triggerOnce={true}>
             <h1 className="font-mempelai text-[#426a69] text-center pt-8 lg:pt-24 lg:text-8xl text-5xl">
               Wedding Gift
             </h1>
-          </Flip>
-          <Zoom direction="in" duration={2000} triggerOnce={true}>
+          </Zoom>
+          <Zoom direction="in" duration={2000} delay={1000} triggerOnce={true}>
             <div className="font-secondary text-center text-[#696969] text-[22px] lg:text-[26px] lg:pt-10 pt-4">
               <p>
                 Doa restu anda merupakan karunia yang sangat berarti bagi kami.
