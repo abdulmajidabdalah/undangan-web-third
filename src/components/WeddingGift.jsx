@@ -236,7 +236,7 @@ const WeddingGift = () => {
           <div className="flex justify-start items-center px-2">
             <ReactWhatsapp 
               className="bg-primary px-4 py-1 rounded-md text-white mb-2 w-24 text-sm" 
-              number="+6285782189711" 
+              number="+6285773144491" 
               message={'Nama :\n Jumlah :\n Nama Bank : BJB or BNI'}>
               Whatsapp
             </ReactWhatsapp>
