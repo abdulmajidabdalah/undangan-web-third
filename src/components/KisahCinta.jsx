@@ -33,13 +33,10 @@ const KisahCinta = () => {
               <div className={styles.card}>
                 <div className={styles.textHeading}>
                   <h1>Awal Pertemuan</h1>
-                  <h1>00 / 00 / 2018</h1>
+                  <h1>27 / 07 / 2018</h1>
                 </div>
                 <Zoom direction="in" duration={2000} triggerOnce={true} className={styles.bodytext}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
-                  minus ut incidunt vel necessitatibus. Repellat alias eum quis
-                  nostrum temporibus numquam exercitationem debitis nulla?
-                  Laudantium quam quasi totam quis id.
+                  Saat itu pada 27 Juli 2018, kita dipertemukan tepat saat latihan PASKIBRA yang mana kita sama-sama awkward karena belum mengenal satu sama lain sebelumnya, tapi takdir berkata lain sampai akhirnya kita bisa menjalani suatu hubungan yang cukup panjang ini :)
                 </Zoom>
               </div>
             </div>

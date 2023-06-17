@@ -44,7 +44,7 @@ const WeddingEvent = () => {
               </a>
           </div>
         </div>
-        <p className="font-secondary text-center text-[50px] leading-[50px] text-primary py-[50px]">
+        {/* <p className="font-secondary text-center text-[50px] leading-[50px] text-primary py-[50px]">
           LIVE STREAMING
         </p>
         <div className="text-center">
@@ -55,7 +55,7 @@ const WeddingEvent = () => {
             <i className="icofont-instagram pr-2"></i>
             @mine07
           </button>
-        </div>
+        </div> */}
       </div>
       <div className={headingStyleNone}></div>
     </>

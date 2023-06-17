@@ -7,6 +7,7 @@ import { Flip, Zoom } from "react-awesome-reveal";
 import axios from "axios";
 import { Slide, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ReactWhatsapp from 'react-whatsapp';
 
 const styles = {
   card: "bg-white/30 backdrop-blur-2xl mx-16 lg:h-[490px] rounded-lg shadow-lg shadow-black lg:mt-20 mt-5",
@@ -207,7 +208,7 @@ const WeddingGift = () => {
               onChange={(e) => setJmlTf(e.target.value)}
               className="focus:outline-none focus:ring-1 px-1 focus:ring-primary rounded-md mb-2"
             />
-            <label className="text-white">Rek. Tujuan</label>
+            <label className="">Rek. Tujuan</label>
             <div className="mb-3 xl:w-96">
               <select
                 className="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
@@ -216,7 +217,7 @@ const WeddingGift = () => {
                 value={bank}
                 onChange={(e) => setBank(e.target.value)}
               >
-                <option selected>Pilih Opsi !</option>
+                <option selected>Pilih Bank</option>
                 <option value="BJB">
                   BJB
                 </option>
@@ -231,9 +232,12 @@ const WeddingGift = () => {
             </button>
           </form>
           <div className="flex justify-start items-center px-2">
-            <button className="bg-primary px-4 py-1 rounded-md text-white mb-2 w-24 text-sm">
+            <ReactWhatsapp 
+              className="bg-primary px-4 py-1 rounded-md text-white mb-2 w-24 text-sm" 
+              number="+6285782189711" 
+              message={'Nama :\n Jumlah :\n Nama Bank : BJB or BNI'}>
               Whatsapp
-            </button>
+            </ReactWhatsapp>
           </div>
         </div>
       </div>
