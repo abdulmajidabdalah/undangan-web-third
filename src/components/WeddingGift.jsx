@@ -197,6 +197,7 @@ const WeddingGift = () => {
             <input
               type="text"
               placeholder="Nama"
+              required
               value={namaRek}
               onChange={(e) => setNamaRek(e.target.value)}
               className="focus:outline-none focus:ring-1 px-1 focus:ring-primary rounded-md mb-2"
@@ -204,6 +205,7 @@ const WeddingGift = () => {
             <input
               type="text"
               placeholder="Jumlah"
+              required
               value={jmlTf}
               onChange={(e) => setJmlTf(e.target.value)}
               className="focus:outline-none focus:ring-1 px-1 focus:ring-primary rounded-md mb-2"
