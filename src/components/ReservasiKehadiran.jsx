@@ -1,55 +1,74 @@
-import axios from "axios";
 import React, { useState } from "react";
 import { Slide, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import {
+  addDoc,
+  collection,
+  Timestamp,
+} from "firebase/firestore";
+import { db } from "../config/configFirebase";
 
 export const headingStyleNone =
   "bg-primary h-3 border-t-4 border-dotted border-white";
 
 const ReservasiKehadiran = () => {
-  const [name, setName] = useState("");
-  const [qty, setQty] = useState("");
-  const [message, setMessage] = useState("");
-  const [confirm, setConfirm] = useState("");
+  const [formData, setFormData] = useState({
+    nama: "",
+    jumlah: "",
+    pesan: "",
+    konfirmasi: "",
+    dibuat: Timestamp.now().toDate(),
+  });
 
-  const handleSubmit = (e) => {
+  // Create Data
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
-      Nama: name,
-      Jumlah: qty,
-      Pesan: message,
-      Konfirmasi: confirm,
-    };
-    axios
-      .post(
-        "https://sheet.best/api/sheets/7b9a72a5-e147-409a-b539-06716b09590e",
-        data
-      )
-      .then((response) => {
-        console.log(response);
-        setName("");
-        setQty("");
-        setMessage("");
-        setConfirm("");
-        toast.success(`Terima Kasih ${name} :)`, {
-          position: "top-center",
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
+    if (!formData.nama || !formData.pesan) {
+      alert("Please fill in the blanks");
+    }
+    setFormData({
+      nama: "",
+      pesan: "",
+      jumlah: "",
+      konfirmasi: "",
+    });
+    await addDoc(collection(db, "kehadiran"), {
+      nama: formData.nama,
+      jumlah: formData.jumlah,
+      pesan: formData.pesan,
+      konfirmasi: formData.konfirmasi,
+      dibuat: Timestamp.now().toDate(),
+    })
+      .then(() => {
+        toast.success(`Terima Kasih ${formData.nama} :)`, {
+                  position: "top-center",
+                  autoClose: 2000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: "light",
+                });
+      })
+      .catch((err) => {
+        console.log(err);
       });
   };
+
 
   return (
     <>
       <div className={headingStyleNone}></div>
       <div className="lg:mx-[174px] bg-bg-main bg-center bg-no-repeat bg-cover pb-28 pt-3">
-        <div className="bg-white h-[100px] rounded-t-[50%] mb-3">
-          <h1 className="text-center font-mempelai text-primary pt-5">
+        <div className="bg-secondary mb-5">
+          <h1 className="text-center font-mempelai text-white text-3xl lg:text-base py-4">
             Reservasi Kehadiran
           </h1>
         </div>
@@ -60,16 +79,18 @@ const ReservasiKehadiran = () => {
               placeholder="Isikan Nama Anda"
               className="w-full py-2 text-[16px] bg-white rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
               required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              name="nama"
+              value={formData.nama}
+              onChange={(e) => handleChange(e)}
             />
             <input
               type="text"
               placeholder="Jumlah Yang Akan Hadir"
               className="w-full py-2 text-[16px] bg-white rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
               required
-              value={qty}
-              onChange={(e) => setQty(e.target.value)}
+              name="jumlah"
+              value={formData.jumlah}
+              onChange={(e) => handleChange(e)}
             />
             <textarea
               rows={3}
@@ -77,8 +98,9 @@ const ReservasiKehadiran = () => {
               placeholder="Berikan Pesan Dan Doa Restu"
               className="w-full py-2 text-[16px] bg-white rounded-sm focus:outline-none focus:ring-1 px-4 focus:ring-primary mb-2"
               required
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              name="pesan"
+              value={formData.pesan}
+              onChange={(e) => handleChange(e)}
             />
             <label className="text-white">Konfirmasi</label>
             <div className="mb-3 xl:w-96">
@@ -86,8 +108,9 @@ const ReservasiKehadiran = () => {
                 className="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 aria-label="Default select example"
                 required
-                value={confirm}
-                onChange={(e) => setConfirm(e.target.value)}
+                name="konfirmasi"
+                value={formData.konfirmasi}
+                onChange={(e) => handleChange(e)}
               >
                 <option selected>Pilih Opsi !</option>
                 <option value="Ya, Saya Akan Datang">

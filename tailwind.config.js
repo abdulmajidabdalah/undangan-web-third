@@ -5,16 +5,16 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern":
-          "linear-gradient(to right, rgba(6,5,6,0), rgba(0,0,0,0)),url('/src/assets/bg-cover2.jpg')",
-        "bg-main": "url('/src/assets/bg-header.jpg')",
+          "linear-gradient(to right, rgba(34, 40, 34, 0.5), rgba(34, 40, 34, 0.5)),url('/src/assets/bg-cover.jpg')",
+        "bg-main": "linear-gradient(to right, rgba(34, 40, 34, 0.5), rgba(34, 40, 34, 0.5)),url('/src/assets/bg-header.jpeg')",
         "bg-mempelai": "url('/src/assets/bg-mempelai.jpeg')",
       },
       backgroundColor: {
-        primary: "#9e795e",
+        primary: "#45CFDD",
       },
       colors: {
-        primary: "#9e795e",
-        secondary: "#E7AB79",
+        primary: "#45CFDD",
+        secondary: "#3AA6B9",
       },
     },
   },

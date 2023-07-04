@@ -16,11 +16,10 @@ const UcapkanSesuatu = () => {
   const [comments, setComments] = useState([]);
   const [formData, setFormData] = useState({
     nama: "",
-    ucapan: "",
-    createdAt: Timestamp.now().toDate(),
+    pesan: "",
+    konfirmasi: "",
+    dibuat: Timestamp.now().toDate(),
   });
-  const [konfirmasi, setKonfirmasi] = useState("");
-
   // Create Comments
 
   const handleChange = (e) => {
@@ -29,19 +28,19 @@ const UcapkanSesuatu = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.nama || !formData.ucapan) {
+    if (!formData.nama || !formData.pesan) {
       alert("Please fill in the blanks");
     }
     setFormData({
       nama: "",
-      ucapan: "",
+      pesan: "",
+      konfirmasi: "",
     });
-    setKonfirmasi("");
-    await addDoc(collection(db, "comments"), {
+    await addDoc(collection(db, "ucapan"), {
       nama: formData.nama,
-      ucapan: formData.ucapan,
-      konfirmasi: konfirmasi,
-      createdAt: Timestamp.now().toDate(),
+      pesan: formData.pesan,
+      konfirmasi: formData.konfirmasi,
+      dibuat: Timestamp.now().toDate(),
     })
       .then(() => {
         console.log("berhasil");
@@ -53,8 +52,8 @@ const UcapkanSesuatu = () => {
 
   // Read Comments
   useEffect(() => {
-    const commentsRef = collection(db, "comments");
-    const q = query(commentsRef, orderBy("createdAt", "desc"));
+    const commentsRef = collection(db, "ucapan");
+    const q = query(commentsRef, orderBy("dibuat", "desc"));
     onSnapshot(q, (snapshot) => {
       const listComments = snapshot.docs.map((doc) => ({
         id: doc.id,
@@ -75,11 +74,11 @@ const UcapkanSesuatu = () => {
     <>
       <div className={headingStyleNone} id="whises"></div>
       <div className="lg:mx-[174px] bg-bg-main bg-center bg-no-repeat bg-cover pb-4 pt-5">
-        <div className="text-center pb-5 pt-7 lg:pt-10 bg-white rounded-t-[50%] px-2">
-          <h1 className="font-mempelai text-[55px] lg:text-[80px]">
+        <div className="text-center pb-5 pt-7 lg:pt-10 bg-secondary px-2">
+          <h1 className="font-mempelai text-white text-[55px] lg:text-[80px]">
             Ucapkan Sesuatu
           </h1>
-          <h2 className="font-secondary text-[26px] mt-4 lg:mt-10">
+          <h2 className="font-secondary text-white text-[26px] mt-4 lg:mt-10">
             Berikan Ucapan & Doa Restu
           </h2>
         </div>
@@ -119,8 +118,8 @@ const UcapkanSesuatu = () => {
               className={styles.input}
               placeholder="Ucapan"
               required
-              value={formData.ucapan}
-              name="ucapan"
+              value={formData.pesan}
+              name="pesan"
               onChange={(e) => handleChange(e)}
             />
             <div className="mb-3 w-full">
@@ -128,12 +127,13 @@ const UcapkanSesuatu = () => {
                 className="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-primary rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 aria-label="Default select example"
                 required
-                value={konfirmasi}
-                onChange={(e) => setKonfirmasi(e.target.value)}
+                name="konfirmasi"
+                value={formData.konfirmasi}
+                onChange={(e) => handleChange(e)}
               >
                 <option selected>Konfirmasi Kehadiran</option>
-                <option value="1">Hadir</option>
-                <option value="2">Tidak Hadir</option>
+                <option value="hadir">Hadir</option>
+                <option value="tidak hadir">Tidak Hadir</option>
               </select>
             </div>
             <button className="bg-primary px-2 rounded-sm text-white mb-8">
@@ -141,37 +141,44 @@ const UcapkanSesuatu = () => {
             </button>
           </form>
           <div className="overflow-auto h-72">
+          {
+            comments.length >= 1 ?
             <ul className="border border-t-primary w-full text-gray-900">
               {comments.map((comment, index) => (
                 <li className="px-4 py-2 border-b border-primary" key={index}>
                   <div className="flex justify-start items-center gap-1 font-semibold text-sm">
                     <div
                       className={
-                        comment.konfirmasi === "1"
+                        comment.konfirmasi === "hadir"
                           ? "bg-green-700 text-white font-sans flex justify-center items-center w-6 h-6 rounded-[50%] mr-2"
                           : "bg-red-600 text-white font-sans flex justify-center items-center w-6 h-6 rounded-[50%] mr-2"
                       }
                     >
-                      <p>{comment.nama[0]}</p>
+                      <p className="capitalize">{comment.nama[0]}</p>
                     </div>
-                    <p className="">{comment.nama}</p>
-                    {comment.konfirmasi === "1" ? (
+                    <p className="capitalize">{comment.nama}</p>
+                    {comment.konfirmasi === "hadir" ? (
                       <GoVerified className="text-green-700" />
                     ) : (
                       <FaWindowClose className="text-red-600" />
                     )}
                   </div>
-                  <p className="ml-9 font-sans text-xs text-slate-600 mt-2">
-                    {comment.ucapan}
+                  <p className="ml-9 font-sans text-xs text-slate-600 mt-2 capitalize">
+                    {comment.pesan}
                   </p>
                   <div className="flex justify-start items-center gap-1 text-[10px] pl-9 mt-1 text-primary">
                     <i className="icofont-clock-time icofont-md"></i>
-                    <p>{comment.createdAt.toDate().toDateString()}</p>
+                    <p>{comment.dibuat.toDate().toDateString()}</p>
                   </div>
                 </li>
               ))}
             </ul>
+          : 
+          <div className="flex justify-center items-center ">
+            <p>komentar masih kosong</p>
           </div>
+        }
+        </div>
         </div>
       </div>
     </>

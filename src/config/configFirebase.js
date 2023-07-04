@@ -2,14 +2,24 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
+// Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyD1HvXQBGNZ9vv0asFOWX3d-LT1N3GDsCo",
-  authDomain: "web-undangan-f122a.firebaseapp.com",
-  projectId: "web-undangan-f122a",
-  storageBucket: "web-undangan-f122a.appspot.com",
-  messagingSenderId: "966758689487",
-  appId: "1:966758689487:web:75cbf7a00ee7aee48725ba",
+
+  apiKey: "AIzaSyASQTJs4xxe9GMHFosVSfo2tzroRdWMcxA",
+
+  authDomain: "undangan-three.firebaseapp.com",
+
+  projectId: "undangan-three",
+
+  storageBucket: "undangan-three.appspot.com",
+
+  messagingSenderId: "23194107645",
+
+  appId: "1:23194107645:web:603e6babc73a3becc44894"
+
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
