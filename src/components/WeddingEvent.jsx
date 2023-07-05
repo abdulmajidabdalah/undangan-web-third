@@ -51,7 +51,7 @@ const WeddingEvent = () => {
               </Zoom>
             </div>
             <a
-              href="https://maps.app.goo.gl/6RhkouGBpx2KYUrZ7"
+              href="https://goo.gl/maps/rcB2jNgZyY8PFNP48"
               target="_blank"
               rel="noreferrer"
             >
