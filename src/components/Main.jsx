@@ -2,7 +2,7 @@ import { useState } from "react";
 import Footer from "./Footer";
 import Gallery from "./Gallery";
 import Header from "./Header";
-import KisahCinta from "./KisahCinta";
+// import KisahCinta from "./KisahCinta";
 import Navigation from "./Navigation";
 import PasanganMempelai from "./PasanganMempelai";
 import ReservasiKehadiran from "./ReservasiKehadiran";
@@ -44,7 +44,7 @@ const Main = () => {
           <PlayMusic handlePlay={handlePlay} isPlaying={isPlaying}/>
           <Navigation />
           <PasanganMempelai />
-          <KisahCinta />
+          {/* <KisahCinta /> */}
           <WeddingEvent />
           <Gallery />
           <WeddingGift />

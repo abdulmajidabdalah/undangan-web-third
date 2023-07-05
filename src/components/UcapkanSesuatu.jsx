@@ -11,6 +11,7 @@ import { GoVerified } from "react-icons/go";
 import { FaWindowClose } from "react-icons/fa";
 import { db } from "../config/configFirebase";
 import { headingStyleNone } from "./ReservasiKehadiran";
+import { Fade } from "react-awesome-reveal";
 
 const UcapkanSesuatu = () => {
   const [comments, setComments] = useState([]);
@@ -75,9 +76,17 @@ const UcapkanSesuatu = () => {
       <div className={headingStyleNone} id="whises"></div>
       <div className="lg:mx-[174px] bg-bg-main bg-center bg-no-repeat bg-cover pb-4 pt-5">
         <div className="text-center pb-5 pt-7 lg:pt-10 bg-secondary px-2">
-          <h1 className="font-mempelai text-white text-[55px] lg:text-[80px]">
-            Ucapkan Sesuatu
-          </h1>
+          <div className="flex justify-center items-center">
+            <Fade
+              delay={1e3}
+              cascade
+              damping={1e-1}
+              triggerOnce={true}
+              className="font-mempelai text-white text-[55px] lg:text-[80px]"
+            >
+              Ucapkan Sesuatu
+            </Fade>
+          </div>
           <h2 className="font-secondary text-white text-[26px] mt-4 lg:mt-10">
             Berikan Ucapan & Doa Restu
           </h2>
@@ -102,7 +111,11 @@ const UcapkanSesuatu = () => {
             </div>
           </div>
           <div className="bg-primary h-[1px] my-4"></div>
-          <form autoComplete="off" className="px-4 font-secondary" onSubmit={handleSubmit}>
+          <form
+            autoComplete="off"
+            className="px-4 font-secondary"
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
               className={`py-2 ${styles.input}`}
@@ -141,44 +154,43 @@ const UcapkanSesuatu = () => {
             </button>
           </form>
           <div className="overflow-auto h-72">
-          {
-            comments.length >= 1 ?
-            <ul className="border border-t-primary w-full text-gray-900">
-              {comments.map((comment, index) => (
-                <li className="px-4 py-2 border-b border-primary" key={index}>
-                  <div className="flex justify-start items-center gap-1 font-semibold text-sm">
-                    <div
-                      className={
-                        comment.konfirmasi === "hadir"
-                          ? "bg-green-700 text-white font-sans flex justify-center items-center w-6 h-6 rounded-[50%] mr-2"
-                          : "bg-red-600 text-white font-sans flex justify-center items-center w-6 h-6 rounded-[50%] mr-2"
-                      }
-                    >
-                      <p className="capitalize">{comment.nama[0]}</p>
+            {comments.length >= 1 ? (
+              <ul className="border border-t-primary w-full text-gray-900">
+                {comments.map((comment, index) => (
+                  <li className="px-4 py-2 border-b border-primary" key={index}>
+                    <div className="flex justify-start items-center gap-1 font-semibold text-sm">
+                      <div
+                        className={
+                          comment.konfirmasi === "hadir"
+                            ? "bg-green-700 text-white font-sans flex justify-center items-center w-6 h-6 rounded-[50%] mr-2"
+                            : "bg-red-600 text-white font-sans flex justify-center items-center w-6 h-6 rounded-[50%] mr-2"
+                        }
+                      >
+                        <p className="capitalize">{comment.nama[0]}</p>
+                      </div>
+                      <p className="capitalize">{comment.nama}</p>
+                      {comment.konfirmasi === "hadir" ? (
+                        <GoVerified className="text-green-700" />
+                      ) : (
+                        <FaWindowClose className="text-red-600" />
+                      )}
                     </div>
-                    <p className="capitalize">{comment.nama}</p>
-                    {comment.konfirmasi === "hadir" ? (
-                      <GoVerified className="text-green-700" />
-                    ) : (
-                      <FaWindowClose className="text-red-600" />
-                    )}
-                  </div>
-                  <p className="ml-9 font-sans text-xs text-slate-600 mt-2 capitalize">
-                    {comment.pesan}
-                  </p>
-                  <div className="flex justify-start items-center gap-1 text-[10px] pl-9 mt-1 text-primary">
-                    <i className="icofont-clock-time icofont-md"></i>
-                    <p>{comment.dibuat.toDate().toDateString()}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          : 
-          <div className="flex justify-center items-center ">
-            <p>komentar masih kosong</p>
+                    <p className="ml-9 font-sans text-xs text-slate-600 mt-2 capitalize">
+                      {comment.pesan}
+                    </p>
+                    <div className="flex justify-start items-center gap-1 text-[10px] pl-9 mt-1 text-primary">
+                      <i className="icofont-clock-time icofont-md"></i>
+                      <p>{comment.dibuat.toDate().toDateString()}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <div className="flex justify-center items-center ">
+                <p>komentar masih kosong</p>
+              </div>
+            )}
           </div>
-        }
-        </div>
         </div>
       </div>
     </>

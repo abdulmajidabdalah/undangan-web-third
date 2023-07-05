@@ -1,15 +1,21 @@
 import React from "react";
 import { styleHeading } from "./KisahCinta";
 import { headingStyleNone } from "./ReservasiKehadiran";
-import { Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const WeddingEvent = () => {
   return (
     <>
       <div className={styleHeading} id="event">
-        <Slide direction="left" duration={2000} triggerOnce={true}>
+        <div className="flex justify-center items-center">
+        <Fade
+                delay={1e3}
+                cascade
+                damping={1e-1}
+                triggerOnce={true}>
           <p>Our Wedding Event</p>
-        </Slide>
+        </Fade>
+        </div>
       </div>
       <div className="bg-bg-main lg:mx-[174px] bg-center bg-cover bg-no-repeat py-[30px]">
         <div className="bg-white/30 backdrop-brightness-50 lg:mx-[80px] mx-6 px-2 flex justify-center rounded-lg border-b-8 border-white">
@@ -45,7 +51,7 @@ const WeddingEvent = () => {
               </Zoom>
             </div>
             <a
-              href="https://goo.gl/maps/RUytg4sNbf2Y14AUA"
+              href="https://maps.app.goo.gl/6RhkouGBpx2KYUrZ7"
               target="_blank"
               rel="noreferrer"
             >
